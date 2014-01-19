@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scrollViewSegn"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/simpleback3"
+    android:windowSoftInputMode="stateHidden|adjustResize" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="10dp" >
+
+        <ImageView
+            android:id="@+id/fotoSegn"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_gravity="center"
+            android:layout_margin="20dp"
+            android:src="@drawable/mancafoto" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center" >
+
+            <TextView
+                android:id="@+id/Destintxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/destinatario" />
+
+            <EditText
+                android:id="@+id/destinAutotxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="@string/comune_responsabile"
+                android:singleLine="true" >
+            </EditText>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center" >
+
+            <TextView
+                android:id="@+id/Oggettotxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:text="@string/oggetto" />
+
+            <EditText
+                android:id="@+id/Oggettoedit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:singleLine="true" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/testotxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/testo" />
+
+        <EditText
+            android:id="@+id/TestoMessaggio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textMultiLine"
+            android:maxHeight="300dp" />
+
+        <Button
+            android:id="@+id/confermaMail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/invia" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

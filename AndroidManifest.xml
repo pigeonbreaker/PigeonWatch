@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.appnolimits.pigeonwatch"
+    android:versionCode="11"
+    android:versionName="1.7" >
+
+    <uses-sdk
+        android:minSdkVersion="6"
+        android:targetSdkVersion="17" />
+
+    <permission
+        android:name="com.appnolimits.pigeonwatch.permission.MAPS_RECEIVE"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!-- <uses-permission android:name="com.appnolimits.pigeonwatch.permission.MAPS_RECEIVE" /> -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <meta-data
+            android:name="com.google.android.maps.v2.API_KEY"
+            android:value="AIzaSyCGUYQIF0Xrr8yvr7xdaMMY1KlsVM28SEw" />
+
+        <activity
+            android:name="com.appnolimits.pigeonwatch.MainActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- created by Carlo at 2013-05-29 19:22:12 -->
+        <activity
+            android:name=".MailCreatorActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".BenvenutoActivity"
+            android:screenOrientation="portrait" />
+        <!-- created by Carlo at 2013-07-22 19:10:58 -->
+        <activity android:name=".ArchivioActivity" >
+        </activity>
+    </application>
+
+</manifest>

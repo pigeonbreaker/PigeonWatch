@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">PigeonWatch</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="testo">testo</string>
+    <string name="invia">invia</string>
+    <string name="oggetto">oggetto</string>
+    <string name="buca">Buca</string>
+    <string name="illuminazione">illuminazione</string>
+    <string name="pubblico_decoro">pubblico decoro</string>
+    <string name="descrizionebtn">Scegli il tipo di segnalazione che vuoi fare</string>
+    <string name="non_ancora_pronto">non ancora pronto</string>
+    <string name="comune_responsabile">comune responsabile</string>
+    <string name="destinatario">destinatario</string>
+    <string name="testo_benvenuto">testo benvenuto</string>
+    <string name="conferma">Inizia</string>
+    <string name="delete_first">Delete First</string>
+    <string name="add_new">Add New</string>
+
+</resources>
